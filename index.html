@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<title>Seongeun</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!--profile card-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+<!--html 전체 배경화면에 관한 css-->
+<style>
+  html {
+    background: url(img/sea.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+</style>
+<!--버튼에 관한 css-->
+<style>
+  .btn-group {
+    position: fixed;
+    top: 20px;
+    left: 39%;
+  }
+
+  button:focus {
+    outline: none;
+  }
+</style>
+<!--첫번째 section 사진에 관한 css-->
+<style>
+  .carousel-inner>.item>img,
+  .carousel-inner>.item>a>img {
+    width: 100%;
+    max-height: 400px;
+    margin: auto;
+  }
+</style>
+<!--두번째 section 공부에 관한 css-->
+<style>
+  .row {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+
+  }
+
+  .thumbnail {
+    display: inline-block;
+    width: 50%;
+    padding: 0 0 15px 0;
+    height: 100px;
+    border: none;
+    border-radius: 0;
+  }
+
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 10px 0px;
+  }
+</style>
+<!--3번째 section 프로필에 관한 css-->
+<style>
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+
+  .contact {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .card>a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+
+  .card>button:hover,
+  .card>a:hover {
+    opacity: 0.7;
+  }
+</style>
+
+<body>
+  <nav class="btn-group" data-spy="affix" data-offset-top="197">
+    <ul class="nav">
+      <button onclick="document.getElementById('first').style.display='block'" style="border:0; background:transparent"><img src="img/Pictures.png" width="45" height="50" alt="pictures"></button>
+      <div id="first" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:50%; height: 0%">
+          <div class="w3-container">
+            <span onclick="document.getElementById('first').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <!--1번째 modalbox 내부 -->
+            <section id="first-section">
+              <article id="photo_article">
+                <div><br><br>
+                  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                      <li data-target="#myCarousel" data-slide-to="1"></li>
+                      <li data-target="#myCarousel" data-slide-to="2"></li>
+                      <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                      <!--1번째 사진-->
+                      <div class="item active">
+                        <img src="img/i1.jpg" alt="1" width="460" height="345">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+                      <!--2번째 사진-->
+                      <div class="item">
+                        <img src="img/i2.jpg" alt="2" width="460" height="345">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+                      <!--3번째 사진-->
+                      <div class="item">
+                        <img src="img/i3.jpg" alt="3" width="460" height="345">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+                      <!--4번째 사진-->
+                      <div class="item">
+                        <img src="img/i4.jpg" alt="4" width="460" height="345">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="img/i5.jpg" alt="5" width="460" height="345">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="img/i6.jpg" alt="6r" width="460" height="300">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="img/i7.jpg" alt="7" width="460" height="345">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+                      <div class="item">
+                        <img src="img/i8.jpg" alt="8" width="460" height="345">
+                        <div class="carousel-caption">
+                        </div>
+                      </div>
+
+                    </div>
+                    <!--왼쪽방향 화살표-->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                          </a>
+                    <!--오른쪽방향 화살표-->
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                          </a>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+
+      <button onclick="document.getElementById('second').style.display='block'" style="border:0; background:transparent"><img src="img/skill.png" width="45" height="50" alt="pictures"></button>
+      <div id="second" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:50%; height:60%">
+          <div class="w3-container">
+            <span onclick="document.getElementById('second').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+            <section id="second-section">
+              <article id="study_article">
+                <!-- Container (Portfolio Section) -->
+                <div id="portfolio" class="container-fluid text-center bg-grey">
+                  <h2>Portfolio</h2><br>
+
+                  <div class="row text-center slideanim">
+
+                    <div class="col-sm-4">
+                      <div class="thumbnail">
+                        <img id="part" src="img/python1.png" alt="Pyhton" width="400" height="300">
+                        <p><strong>Python</strong></p>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="thumbnail">
+                        <img onclick="document.getElementById('list-raspberrypi').style.display='block'" style="border:0; background:transparent" id="part" src="img/raspberrypi.jpg" alt="Raspberrypi" width="400" height="300">
+                        <div id="list-raspberrypi" class="w3-modal">
+                          <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:50%; height:100%">
+                            <div class="w3-container">
+                              <span onclick="document.getElementById('list-raspberrypi').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                              <section id="raspberrypi-section">
+                                <article id="raspberrypi_article">
+                                  <!-- Container (Portfolio Section) -->
+                                  <div id="list" class="container-fluid text-center bg-grey">
+                                    <h4>raspberrypi Project-List</h4>
+                                    <hr style="margin:1px 0px">
+                                    <div id="autofeeding" class="w3-container file" style="width:100%;height:500px">
+                                      <iframe src="./file/autofeeding.pdf" style="width:100%; height:100%"></iframe>
+                                    </div>
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="thumbnail">
+                        <img id="part" src="img/blockchain.jpg" alt="Blockchain" width="400" height="300">
+                        <p><strong>Blockchain</strong></p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row text-center slideanim">
+
+                    <div class="col-sm-4">
+                      <div class="thumbnail">
+                        <img id="part" src="img/frontend.png" alt="Frontend" width="400" height="300">
+                        <p><strong>Frontend</strong></p>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="thumbnail">
+                        <img id="part" src="img/nodejs.png" alt="Nodejs" width="400" height="300">
+                        <p><strong>nodejs</strong></p>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                      <div class="thumbnail">
+                        <img onclick="document.getElementById('list-atmega').style.display='block'" style="border:0; background:transparent" id="part" src="img/atmega.jpg" alt="Atemga" width="400" height="300">
+                        <div id="list-atmega" class="w3-modal">
+                          <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:50%; height:100%">
+                            <div class="w3-container">
+                              <span onclick="document.getElementById('list-atmega').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                              <section id="atmega-section">
+                                <article id="atmega_article">
+                                  <!-- Container (Portfolio Section) -->
+                                  <div id="list" class="container-fluid text-center bg-grey">
+                                    <h4>Atmega Project-List</h4>
+                                    <hr style="margin:0px 0px">
+                                    <div class="w3-bar w3-black" style="margin-top:0px">
+                                      <button class="w3-bar-item w3-button" onclick="openfile('best-cooker')">best-cooker</button>
+                                      <button class="w3-bar-item w3-button" onclick="openfile('timeschedule')">timeschedule</button>
+                                      <button class="w3-bar-item w3-button" onclick="openfile('moring')">moring</button>
+                                      <button class="w3-bar-item w3-button" onclick="openfile('criminal')">criminal</button>
+
+                                    </div>
+
+                                    <div id="best-cooker" class="w3-container file" style="width:100%;height:500px">
+                                      <iframe src="./file/best-cooker.pdf" style="width:100%; height:100%"></iframe>
+
+                                    </div>
+                                    <div id="timeschedule" class="w3-container file" style="display:none; width:100%;height:500px">
+                                      <iframe src="./file/timeschedule.pdf" style="width:100%; height:100%"></iframe>
+                                    </div>
+                                    <div id="moring" class="w3-container file" style="display:none; width:100%;height:500px">
+                                      <iframe src="./file/moring.pdf" style="width:100%; height:100%"></iframe>
+                                    </div>
+                                    <div id="criminal" class="w3-container file" style="display:none; width:100%;height:500px">
+                                      <iframe src="./file/criminal.pdf" style="width:100%; height:100%"></iframe>
+                                    </div>
+
+                                    <script>
+                                      function openfile(fileName) {
+                                        var i;
+                                        var x = document.getElementsByClassName("file");
+                                        for (i = 0; i < x.length; i++) {
+                                          x[i].style.display = "none";
+                                        }
+                                        document.getElementById(fileName).style.display = "block";
+                                      }
+                                    </script>
+
+                                  </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+
+          </div><br>
+          </article>
+          </section>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <button onclick="document.getElementById('third').style.display='block'" style="border:0; background:transparent"><img src="img/User.png" width="45" height="50" alt="pictures"></button>
+      <div id="third" class="w3-modal">
+        <div class="w3-modal-container">
+          <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:40%">
+            <div class="w3-container">
+              <span onclick="document.getElementById('third').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+              <h2 style="text-align:center">Profile</h2>
+              <div class="card">
+                <img src="img/profile.png" alt="John" style="width:100%; height:30%">
+                <h1>Seongeun Cho</h1>
+                <p class="title">CEO & Founder, Example</p>
+                <p>Chengju univercity</p>
+                <p>tel : 010 -7546 -7812</p>
+                <div style="margin: 24px 0;">
+                  <a href="#"><i class="fa fa-dribbble"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                </div>
+                <p><button class="Contact">Contact</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </ul>
+  </nav>
+</body>
+
+</html>
